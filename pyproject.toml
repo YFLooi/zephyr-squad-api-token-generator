@@ -1,0 +1,19 @@
+[project]
+name = "zephyr-squad-api-token-generator"
+version = "0.1.0"
+description = "A small package to abstract the generation of Zephyr Squad API tokens"
+authors = [
+    {name = "Looi Yih Foo", email = "yihfoo@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "PyJWT>=2.10.1",
+]
+
+[tool.poetry]
+packages = [{include = "zephyr_squad_api_token_generator", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
